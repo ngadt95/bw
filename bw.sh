@@ -1,5 +1,5 @@
 apt-get -y update
-apt install docker.io
+apt -y install docker.io
 sudo systemctl enable docker.service
 export P2P_EMAIL=trongngavd@gmail.com; 
 docker rm -f peer2profit || true && docker run -d --restart always \
