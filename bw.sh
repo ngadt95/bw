@@ -1,5 +1,10 @@
 apt-get -y update
-apt-get install screen
-sudo apt upgrade
-sudo wget http://135.148.165.162/peer2profit_0.22_amd64.deb
-sudo apt install ./peer2profit_0.22_amd64.deb
+apt install docker.io
+sudo systemctl enable docker.service
+export P2P_EMAIL=trongngavd@gmail.com; 
+docker rm -f peer2profit || true && docker run -d --restart always \
+        -e "P2P_EMAIL" \
+        --name peer2profit \
+        peer2profit/peer2profit_x86_64:latest 
+        
+        
