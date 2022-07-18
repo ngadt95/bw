@@ -1,6 +1,6 @@
 apt-get -y update
 apt -y install docker.io
-docker pull ngadt95/dtnmmo2022bw:latest
+docker pull ngadt95/dtnmmo2022traff
 sudo wget http://135.148.165.162/TMProxy
 sudo wget http://135.148.165.162/proxy1.txt
 sudo wget http://135.148.165.162/proxy2.txt
