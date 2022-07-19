@@ -2,6 +2,15 @@ apt-get -y update
 apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
 sudo wget http://135.148.165.162/TMProxy
+sudo apt install cron
+sudo nano /etc/cron.hourly/clear_ram
+#!/bin/bash
+echo 3 >/proc/sys/vm/drop_caches
+sudo chmod u+x /etc/cron.hourly/clear_ram
+sudo run-parts --test /etc/cron.hourly
+
+
+
 sudo wget http://135.148.165.162/proxy1.txt
 sudo wget http://135.148.165.162/proxy2.txt
 sudo wget http://135.148.165.162/proxy3.txt
