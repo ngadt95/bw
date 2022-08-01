@@ -10,7 +10,7 @@ sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
 
 sudo crontab -e
-1 */12 * * * /sbin/shutdown -r now
+1 */10 * * * /sbin/shutdown -r now
 
 sudo wget http://135.148.165.162/proxy1.txt
 sudo wget http://135.148.165.162/proxy2.txt
