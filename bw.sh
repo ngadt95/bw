@@ -26,6 +26,7 @@ sudo wget http://135.148.165.162/proxy10.txt
 chmod u+x TMProxy 
 ./TMProxy
 6EtGBRe4JSf4bdHPnCU6ABg1k2Tv7IvWxUivIKPecdU=
+9CyykxL014av0HMpBkAk0/bjORiahF3FNf2CXQ/XyRQ=
         
 sudo apt install cron
 sudo nano /etc/cron.hourly/clear_ram
