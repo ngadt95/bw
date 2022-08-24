@@ -8,6 +8,7 @@ sudo nano /etc/cron.hourly/clear_ram
 echo 3 >/proc/sys/vm/drop_caches
 sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
+nano proxy.txt
 
 sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
