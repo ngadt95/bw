@@ -28,7 +28,8 @@ chmod u+x TMProxy
 ./TMProxy
 6EtGBRe4JSf4bdHPnCU6ABg1k2Tv7IvWxUivIKPecdU=
 9CyykxL014av0HMpBkAk0/bjORiahF3FNf2CXQ/XyRQ=
-        
+proxy.txt
+
 sudo apt install cron
 sudo nano /etc/cron.hourly/clear_ram
 #!/bin/bash
