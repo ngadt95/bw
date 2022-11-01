@@ -26,4 +26,11 @@ sudo nano /etc/cron.hourly/clear_ram
 echo 3 >/proc/sys/vm/drop_caches
 sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
+
+sudo -i
+apt update
+apt install openssh-server
+ssh -p port user@ip
+ssh -p 6868 ngadt95@127.0.0.1
+
 ./TMProxy -r
