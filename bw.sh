@@ -1,7 +1,7 @@
 apt-get -y update
 apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
-sudo wget http://51.79.186.224/TMProxy
+sudo wget http://103.133.104.125/TMProxy
 sudo apt install cron
 sudo nano /etc/cron.hourly/clear_ram
 #!/bin/bash
