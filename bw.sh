@@ -16,6 +16,8 @@ sudo crontab -e
 
 docker image: sportstvdev/rpproxy
 sudo wget http://103.133.104.125/RPProxy
+chmod u+x RPProxy 
+./RPProxy
 
 chmod u+x TMProxy 
 ./TMProxy
