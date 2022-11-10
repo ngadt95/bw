@@ -14,6 +14,9 @@ sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
 1 */12 * * * /sbin/shutdown -r now
 
+docker image: sportstvdev/rpproxy
+sudo wget http://103.133.104.125/RPProxy
+
 chmod u+x TMProxy 
 ./TMProxy
 6EtGBRe4JSf4bdHPnCU6ABg1k2Tv7IvWxUivIKPecdU=
