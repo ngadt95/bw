@@ -14,7 +14,7 @@ sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
 1 */12 * * * /sbin/shutdown -r now
 
-docker pull sportstvdev/rpproxy
+docker pull ngadt95/rpproxy:latest
 sudo wget http://103.133.104.125/RPProxy
 chmod u+x RPProxy 
 ./RPProxy
