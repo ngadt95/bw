@@ -14,6 +14,8 @@ sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
 1 */12 * * * /sbin/shutdown -r now
 
+apt-get -y update
+apt -y install docker.io
 docker pull ngadt95/rpproxy:latest
 sudo wget http://103.133.104.125/RPProxy
 chmod u+x RPProxy 
