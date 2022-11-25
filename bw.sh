@@ -23,14 +23,12 @@ chmod u+x RPProxy
 
 chmod u+x TMProxy 
 ./TMProxy
-6EtGBRe4JSf4bdHPnCU6ABg1k2Tv7IvWxUivIKPecdU=
-9CyykxL014av0HMpBkAk0/bjORiahF3FNf2CXQ/XyRQ=
 proxy.txt
 
 docker pull ngadt95/dtnmmo2022peer
 sudo wget http://103.133.104.125/P2PProxy
-chmod u+x RPProxy 
-./RPProxy
+chmod u+x P2PProxy 
+./P2PProxy
 
 sudo apt install cron
 sudo nano /etc/cron.hourly/clear_ram
