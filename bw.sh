@@ -47,7 +47,7 @@ ssh -p 6868 ngadt95@127.0.0.1
 ./TMProxy -r
 
 
-g-pay.
+g-pay
 pay.google.com
 paycec
 eromnet
