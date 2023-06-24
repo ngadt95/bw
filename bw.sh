@@ -45,3 +45,44 @@ ssh -p port user@ip
 ssh -p 6868 ngadt95@127.0.0.1
 
 ./TMProxy -r
+
+
+g-pay.
+pay.google.com
+paycec
+eromnet
+cryptomus
+tazapay
+2checkout
+braintree
+worldpay
+pay.amazon.com
+stripe
+wepay
+paypal
+skrill
+checkout
+perfectmoney
+payeer
+wmtransfer
+payza
+airpay
+alipay
+payoneer
+wise
+pingpongx
+bitpay
+Shopify
+amazon
+Authorize.Net
+digitalocean.com
+linode.com
+azure.com
+cloud.google.com
+ovhcloud.com
+vultr.com
+azdigi.com
+dediserve.com
+kamatera.com
+pay.facebook.com
+accounts.google.com
