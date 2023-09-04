@@ -45,7 +45,15 @@ apt install openssh-server
 ssh -p port user@ip
 ssh -p 6868 ngadt95@127.0.0.1
 
-./TMProxy -r
+sudo docker run --privileged --rm tonistiigi/binfmt --install all
+sudo apt-get install qemu binfmt-support qemu-user-static
+wget https://github.com/engageub/InternetIncome/archive/refs/heads/main.zip
+sudo apt-get install unzip
+unzip main.zip
+cd InternetIncome-main
+
+sudo bash internetIncome.sh --start
+sudo bash internetIncome.sh --delete
 
 
 g-pay
