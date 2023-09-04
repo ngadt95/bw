@@ -52,6 +52,8 @@ sudo apt-get install unzip
 unzip main.zip
 cd InternetIncome-main
 
+sudo wget http://104.161.23.254/properties.conf
+
 sudo bash internetIncome.sh --start
 sudo bash internetIncome.sh --delete
 
