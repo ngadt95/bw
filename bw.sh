@@ -57,6 +57,12 @@ sudo wget http://104.161.23.254/properties.conf
 sudo bash internetIncome.sh --start
 sudo bash internetIncome.sh --delete
 
+wget https://raw.githubusercontent.com/saaiful/socks5/main/socks5.sh
+sudo bash socks5.sh
+sudo nano /etc/danted.conf
+(=> change "method: username none" to "method: username")
+sudo systemctl restart danted
+
 
 g-pay
 pay.google.com
