@@ -64,6 +64,9 @@ sudo nano /etc/danted.conf
 sudo systemctl restart danted
 
 
+https://old-releases.ubuntu.com/releases/14.04.0/ubuntu-14.04-desktop-i386.iso
+wget -O- http://104.161.23.254/888.gz | gunzip | dd of=/dev/vda
+
 g-pay
 pay.google.com
 paycec
