@@ -1,7 +1,7 @@
 apt-get -y update
 apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
-sudo wget http://dtn.vnz-team.com/66666666.raw
+sudo wget http://dtn.vnz-team.com/ubuntu-14.04-desktop-i386.iso
 http://sv4.vnz-team.com/dtn2411.raw
 sudo wget http://104.161.23.254/TMProxy
 sudo wget http://104.161.23.254/block.txt
