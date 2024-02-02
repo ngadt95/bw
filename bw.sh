@@ -5,9 +5,9 @@ sudo wget http://dtn.vnz-team.com/ubuntu-14.04-desktop-i386.iso
 http://s3.vnz-team.com/dtn2401.raw
 sudo wget http://104.161.23.254/TMProxy
 sudo wget http://104.161.23.254/block.txt
-sudo wget http://104.161.23.254/txt.zip
+sudo wget http://104.161.23.254/a.zip
 sudo apt-get install unzip
-unzip txt.zip
+unzip a.zip
 sudo apt install cron
 sudo nano /etc/cron.hourly/clear_ram
 #!/bin/bash
