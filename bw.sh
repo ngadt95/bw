@@ -71,6 +71,41 @@ sudo systemctl restart danted
 https://old-releases.ubuntu.com/releases/14.04.0/ubuntu-14.04-desktop-i386.iso
 wget -O- http://104.161.23.254/888888.gz | gunzip | dd of=/dev/vda
 
+##############################################################################
+*** Đảm bảo bạn có đúng quyền đối với thư mục và tệp:
+ sudo chmod 755 /etc/3proxy
+ sudo chmod 600 /etc/3proxy/3proxy.cfg;
+*** Đây là cấu hình:
+# Google DNS
+nserver 8.8.8.8
+nserver 8.8.4.4
+
+nscache 65536
+timeouts 1 5 30 60 180 1800 15 60
+
+# Proxy accounts stored in this file
+users $/etc/.proxyauth
+
+# Specify daemon as a start mode
+daemon
+
+authcache user 60
+auth strong cache
+
+deny * * 127.0.0.1
+allow * * * 80-88,8080-8088 HTTP
+allow * * * 443,8443 HTTPS
+allow * * * 1-65535 HTTP
+allow * * * 1-65535 HTTPS
+
+# 3128 port as you wanted
+proxy -n -p3128 -a
+*** Tệp người dùng và mật khẩu /etc/.proxyauth ("CL" có nghĩa là mật khẩu được lưu trữ mà không mã hóa):
+ngadt95:CL:ngadt95
+*** Đừng quên khởi động lại sau khi thay đổi:
+sudo systemctl restart 3proxy
+##############################################################################
+
 g-pay
 pay.google.com
 paycec
