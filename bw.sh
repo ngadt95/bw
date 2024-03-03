@@ -105,6 +105,7 @@ ngadt95:CL:ngadt95
 *** Đừng quên khởi động lại sau khi thay đổi:
 sudo systemctl restart 3proxy
 ##############################################################################
+sync; echo 3 > /proc/sys/vm/drop_caches
 cd /home/nga/
 nano clearcache.sh
 nọi dung file clearcache.sh:
