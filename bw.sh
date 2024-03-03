@@ -105,7 +105,19 @@ ngadt95:CL:ngadt95
 *** Đừng quên khởi động lại sau khi thay đổi:
 sudo systemctl restart 3proxy
 ##############################################################################
-
+cd /home/nga/
+nano clearcache.sh
+nọi dung file clearcache.sh:
+#!/bin/bash
+echo "echo 3 > /proc/sys/vm/drop_caches"
+chmod +x clearcache.sh
+apt-get install cron
+sửa file cron: crontab -e
+nội dung: 
+0 2 * * * /home/nga/clearcache.sh
+restart:
+systemctl restart cron
+##############################################################################
 g-pay
 pay.google.com
 paycec
