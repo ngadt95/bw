@@ -15,7 +15,7 @@ echo 3 >/proc/sys/vm/drop_caches
 sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
 nano proxy.txt
-http://s3-vuaphapthuat.goplay.vn/s/s45/GameLoader.swf?user=cau9xking198@goid&pass=3b3b1c29e1e827cc8df08a318d68ddc8&version=0.9.9a33.271&isExpand=true
+
 sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
 1 */12 * * * /sbin/shutdown -r now
