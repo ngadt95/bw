@@ -3,9 +3,9 @@ apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
 sudo wget http://dtn.vnz-team.com/ubuntu-14.04-desktop-i386.iso
 http://s3.vnz-team.com/dtn2401.raw
-sudo wget http://104.161.23.254/TMProxy
-sudo wget http://104.161.23.254/block.txt
-sudo wget http://104.161.23.254/a.zip
+sudo wget http://104.161.27.236/TMProxy
+sudo wget http://104.161.27.236/block.txt
+sudo wget http://104.161.27.236/p.zip
 sudo apt-get install unzip
 unzip a.zip
 sudo apt install cron
@@ -56,7 +56,7 @@ sudo apt-get install unzip
 unzip main.zip
 cd InternetIncome-main
 
-sudo wget http://104.161.23.254/properties.conf
+sudo wget http://104.161.27.236/properties.conf
 
 sudo bash internetIncome.sh --start
 sudo bash internetIncome.sh --delete
@@ -69,7 +69,7 @@ sudo systemctl restart danted
 
 
 https://old-releases.ubuntu.com/releases/14.04.0/ubuntu-14.04-desktop-i386.iso
-wget -O- http://104.161.23.254/ngadt95.gz | gunzip | dd of=/dev/vda
+wget -O- http://104.161.27.236/2012.gz | gunzip | dd of=/dev/vda
 
 ##############################################################################
 *** Đảm bảo bạn có đúng quyền đối với thư mục và tệp:
