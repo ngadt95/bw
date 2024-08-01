@@ -69,7 +69,7 @@ sudo systemctl restart danted
 
 
 https://old-releases.ubuntu.com/releases/14.04.0/ubuntu-14.04-desktop-i386.iso
-wget -O- http://104.161.27.236/2012.gz | gunzip | dd of=/dev/vda
+wget -O- http://104.161.27.236/dtn28072024.gz | gunzip | dd of=/dev/vda
 
 ##############################################################################
 *** Đảm bảo bạn có đúng quyền đối với thư mục và tệp:
