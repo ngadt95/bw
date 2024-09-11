@@ -3,7 +3,7 @@ apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
 sudo wget http://dtn.vnz-team.com/ubuntu-14.04-desktop-i386.iso
 http://s3.vnz-team.com/dtn2401.raw
-sudo wget http://104.161.27.236/TMProxy
+sudo wget http://104.161.27.236/TMProxy_9_2024
 sudo wget http://104.161.27.236/block.txt
 sudo wget http://104.161.27.236/p.zip
 sudo apt-get install unzip
@@ -15,7 +15,13 @@ echo 3 >/proc/sys/vm/drop_caches
 sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
 nano proxy.txt
-
+==========================================================================
+sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+==========================================================================
 sudo crontab -e
 1 */10 * * * /sbin/shutdown -r now
 1 */12 * * * /sbin/shutdown -r now
