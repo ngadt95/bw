@@ -15,6 +15,19 @@ sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
 nano proxy.txt
 ==========================================================================
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh
+sudo wget http://104.161.27.236/packetshare.zip
+./run.sh
+docker compose down //stop và xóa container
+docker container logs <container ID>
+docker exec -it <ID> sh //check kết nối
+
+
+
+
+
+==========================================================================
 sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
