@@ -27,6 +27,7 @@ docker exec -it <ID> sh //check kết nối
 ./run.sh --proxy_file 1.txt
 
 docker compose ps | grep imagename | wc -l
+docker ps -q | wc -l
 
 
 
