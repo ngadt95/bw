@@ -24,6 +24,8 @@ docker compose down //stop và xóa container
 docker container logs <container ID>
 docker exec -it <ID> sh //check kết nối
 
+./run.sh --proxy_file 1.txt
+
 
 
 
