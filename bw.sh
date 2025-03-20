@@ -18,7 +18,7 @@ nano proxy.txt
 sudo apt install openssh-server
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
-sudo wget http://104.161.27.236/packetshare.zip
+sudo wget http://104.161.27.236/ps.zip
 ./run.sh
 docker compose down //stop và xóa container
 docker container logs <container ID>
