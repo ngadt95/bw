@@ -15,6 +15,7 @@ sudo chmod u+x /etc/cron.hourly/clear_ram
 sudo run-parts --test /etc/cron.hourly
 nano proxy.txt
 ==========================================================================
+sudo apt install openssh-server
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
 sudo wget http://104.161.27.236/packetshare.zip
