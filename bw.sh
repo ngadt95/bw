@@ -30,6 +30,15 @@ docker compose ps | grep imagename | wc -l
 docker ps -q | wc -l
 
 
+nslookup google.com 172.17.0.1
+sudo mkdir -p /etc/systemd/resolved.conf.d
+sudo nano /etc/systemd/resolved.conf.d/extra-listener.conf
+[Resolve]
+DNSStubListenerExtra=172.17.0.1
+
+sudo systemctl restart systemd-resolved
+nslookup google.com 172.17.0.1
+
 
 ==========================================================================
 sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
