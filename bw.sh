@@ -1,3 +1,7 @@
+scp "D:\chia nhỏ file txt\STS(0.5)\s167\s253.zip" nga@192.168.1.199:/tmp/
+sudo mv /tmp/s252.zip /root/
+
+
 apt-get -y update
 apt -y install docker.io
 docker pull ngadt95/dtnmmo2022traff
