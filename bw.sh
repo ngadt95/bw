@@ -1,9 +1,9 @@
 scp "D:\chia nhỏ file txt\STS(0.5)\s167\s253.zip" nga@192.168.1.199:/tmp/
 sudo mv /tmp/s252.zip /root/
-sudo cp /duong/dan/den/file/can/tai /home/nga/ten_file_muon_luu
-sudo chown nga:nga /home/nga/ten_file_muon_luu
-# Cú pháp: scp [user]@[ip]:[duong_dan_linux] [duong_dan_windows]
-scp nga@<IP_VPS_CUA_BAN>:/home/nga/ten_file_muon_luu "E:\Launch\0000DANGLAM\CHECKIN_DAILY\Traffmonetizer\NGA\TRAFFLITE_VPS\"
+sudo cp /root/bot.log  /home/nga/bot.log
+sudo chown nga:nga /home/nga/bot.log
+# Cú pháp: scp nga@192.168.1.x:[duong_dan_linux] [duong_dan_windows]
+scp nga@192.168.1.x:/home/nga/bot.log "E:\Launch\0000DANGLAM\CHECKIN_DAILY\Traffmonetizer\NGA\TRAFFLITE_VPS\"
 
 apt-get -y update
 apt -y install docker.io
